@@ -1,4 +1,3 @@
-from itertools import count
 import numpy as np
 
 def main(debug=False):
@@ -12,9 +11,7 @@ def main(debug=False):
             current_area = area(positions[i], positions[j])
             if current_area > max_area:
                 max_area = current_area
-    
-    print(max_area)
-    
+    print(max_area) 
     
 def area(pos1, pos2):
     a = abs(int(pos1[0]) - int(pos2[0])) + 1
